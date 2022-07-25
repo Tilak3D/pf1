@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+body {
+	--color-text: #e0e0e0;
+	--color-text-secondary: #5e6262;
+	--color-bg: #151616;
+	--color-link: #5e6262;
+	--color-link-hover: #e0e0e0;
+	--color-date: #e0e0e0;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: Futura, "futura-pt", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 100;
+	text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1.6;
+    background: #000000;
+    color: #ffffff;
+    overflow: hidden;
+  }
+
+  .slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10000vw;
+    height: 100vh;
+    transition: left 1s;
+  }
+
+  .holder div {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 30px;
+  }
+
+  .slide-1 {
+    background-image: url(https://source.unsplash.com/vI5XwPbGvmY/1920x1280);
+  }
+
+  .slide-2 {
+    background-image: url(https://source.unsplash.com/9i0_nwHe6T8/1920x1280);
+  }
+
+  .slide-3 {
+    background-image: url(https://source.unsplash.com/Qwcu7dHyL7A/1920x1280);
+  }
+
+  .slide-4 {
+    background-image: url(https://source.unsplash.com/sxaYEsE12RM/1920x1280);
+  }
+
+  .slide-5 {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5a1901139972653.6239877dc62f1.jpeg);
+  }
+
+  .slide-6 {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/724964147254067.62bed273c3888.jpg);
+  }
+
+  .slide-7 {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/4c06e4115776871.607040b46742e.jpg);
+  }
+
+  .slide-8 {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/33038a115776871.607040b4654b4.jpg);
+  }
+
+  .steps {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
